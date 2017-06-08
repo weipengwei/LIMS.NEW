@@ -79,6 +79,16 @@ namespace LIMS.Entities
             get; set;
         }
 
+        public string RegisterNumber
+        {
+            get; set;
+        }
+
+        public DateTime ValidDate
+        {
+            get; set;
+        }
+
         public override void Init(IDataReader reader)
         {
             base.Init(reader);
@@ -97,6 +107,9 @@ namespace LIMS.Entities
             this.IsLocal = reader.GetBoolean(reader.GetOrdinal("is_local"));
             this.Barcode = reader["barcode"].ToString();
             this.BarcodeUrl = reader["barcode_url"].ToString();
+
+            this.RegisterNumber = reader["register_number"].ToString();
+            this.ValidDate =Convert.ToDateTime(reader["ValidDate"]);
         }
     }
 }

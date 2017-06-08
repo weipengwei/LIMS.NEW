@@ -17,7 +17,7 @@ namespace LIMS.Repositories
         private static string COLUMN_SQL = @"id, name, full_name, description, brand, short_code, 
 mini_package_unit, mini_package_spec, mini_package_count, package_unit, 
 category, barcode, barcode_url, is_local,
-created_id, created_time, updated_id, updated_time";
+created_id, created_time, updated_id, updated_time,barcode_url,register_number,ValidDate";
 
         public static void Add(ProductEntity product)
         {
@@ -25,7 +25,7 @@ created_id, created_time, updated_id, updated_time";
 VALUES(@p_id, @p_name, @p_full_name, @p_description, @p_brand, @p_short_code,
 @p_mini_package_unit, @p_mini_package_spec, @p_mini_package_count, @p_package_unit,
 @p_category, @p_barcode, @p_barcode_url, @p_is_local,
-@p_created_id, @p_created_time, @p_updated_id, @p_updated_time)", COLUMN_SQL);
+@p_created_id, @p_created_time, @p_updated_id, @p_updated_time,@p_barcode_url,@p_register_number,@p_ValidDate)", COLUMN_SQL);
 
             var db = DatabaseFactory.CreateDatabase();
             var dc = db.GetSqlStringCommand(sql);
@@ -47,7 +47,10 @@ VALUES(@p_id, @p_name, @p_full_name, @p_description, @p_brand, @p_short_code,
             db.AddInParameter(dc, "p_created_time", DbType.DateTime, product.CreatedTime);
             db.AddInParameter(dc, "p_updated_id", DbType.String, product.UpdatedId);
             db.AddInParameter(dc, "p_updated_time", DbType.DateTime, product.UpdatedTime);
-
+            db.AddInParameter(dc, "p_updated_time", DbType.DateTime, product.UpdatedTime);
+            db.AddInParameter(dc, "p_barcode_url", DbType.String, product.BarcodeUrl);
+            db.AddInParameter(dc, "p_register_number", DbType.String, product.RegisterNumber);
+            db.AddInParameter(dc, "p_ValidDate", DbType.DateTime, product.ValidDate);
             db.ExecuteNonQuery(dc);
         }
 
@@ -57,7 +60,7 @@ VALUES(@p_id, @p_name, @p_full_name, @p_description, @p_brand, @p_short_code,
 SET name = @p_name, full_name = @p_full_name, description = @p_description, brand = @p_brand, short_code = @p_short_code, 
 mini_package_unit = @p_mini_package_unit, mini_package_spec = @p_mini_package_spec, mini_package_count = @p_mini_package_count, 
 package_unit = @p_package_unit, category = @p_category, is_local = @p_is_local,
-updated_id = @p_updated_id, updated_time = @p_updated_time
+updated_id = @p_updated_id, updated_time = @p_updated_time,barcode_url=@p_barcode_url,register_number=@p_register_number,ValidDate=@p_ValidDate
 WHERE id = @p_id";
 
             var db = DatabaseFactory.CreateDatabase();
@@ -78,6 +81,9 @@ WHERE id = @p_id";
             db.AddInParameter(dc, "p_updated_id", DbType.String, product.UpdatedId);
             db.AddInParameter(dc, "p_updated_time", DbType.DateTime, product.UpdatedTime);
 
+            db.AddInParameter(dc, "p_barcode_url", DbType.String, product.BarcodeUrl);
+            db.AddInParameter(dc, "p_register_number", DbType.String, product.RegisterNumber);
+            db.AddInParameter(dc, "p_ValidDate", DbType.DateTime, product.ValidDate);
             db.ExecuteNonQuery(dc);
         }
 
