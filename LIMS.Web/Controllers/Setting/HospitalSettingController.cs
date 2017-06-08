@@ -143,6 +143,12 @@ namespace LIMS.Web.Controllers.Setting
             return View();
         }
 
+        /// <summary>
+        /// 获取订单状态
+        /// </summary>
+        /// <param name="hospitalId">医院ID</param>
+        /// <param name="vendorId"></param>
+        /// <returns></returns>
         public JsonNetResult GetAuditingProducts(string hospitalId, string vendorId)
         {
             if (string.IsNullOrEmpty(hospitalId))
