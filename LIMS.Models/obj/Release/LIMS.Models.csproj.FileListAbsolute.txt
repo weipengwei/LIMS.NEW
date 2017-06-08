@@ -1,0 +1,17 @@
+E:\Customer\YangCheng\试剂管理\Source\LIMS.Models\bin\Release\LIMS.Models.dll
+E:\Customer\YangCheng\试剂管理\Source\LIMS.Models\bin\Release\LIMS.Models.pdb
+E:\Customer\YangCheng\试剂管理\Source\LIMS.Models\bin\Release\LIMS.Util.dll
+E:\Customer\YangCheng\试剂管理\Source\LIMS.Models\bin\Release\LIMS.Util.pdb
+E:\Customer\YangCheng\试剂管理\Source\LIMS.Models\obj\Release\LIMS.Models.csprojResolveAssemblyReference.cache
+E:\Customer\YangCheng\试剂管理\Source\LIMS.Models\obj\Release\LIMS.Models.dll
+E:\Customer\YangCheng\试剂管理\Source\LIMS.Models\obj\Release\LIMS.Models.pdb
+C:\Users\su_gjian\Desktop\新建文件夹\LIMS.Models\bin\Release\LIMS.Models.dll
+C:\Users\su_gjian\Desktop\新建文件夹\LIMS.Models\bin\Release\LIMS.Models.pdb
+C:\Users\su_gjian\Desktop\新建文件夹\LIMS.Models\bin\Release\LIMS.Util.dll
+C:\Users\su_gjian\Desktop\新建文件夹\LIMS.Models\bin\Release\zxing.dll
+C:\Users\su_gjian\Desktop\新建文件夹\LIMS.Models\bin\Release\LIMS.Util.pdb
+C:\Users\su_gjian\Desktop\新建文件夹\LIMS.Models\bin\Release\zxing.pdb
+C:\Users\su_gjian\Desktop\新建文件夹\LIMS.Models\bin\Release\zxing.xml
+C:\Users\su_gjian\Desktop\新建文件夹\LIMS.Models\obj\Release\LIMS.Models.csprojResolveAssemblyReference.cache
+C:\Users\su_gjian\Desktop\新建文件夹\LIMS.Models\obj\Release\LIMS.Models.dll
+C:\Users\su_gjian\Desktop\新建文件夹\LIMS.Models\obj\Release\LIMS.Models.pdb

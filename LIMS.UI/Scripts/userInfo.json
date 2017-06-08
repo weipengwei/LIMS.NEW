@@ -1,0 +1,34 @@
+{
+    "status":true,
+    "userInfo":[
+        {
+            "name":"用户名1",
+            "account":"account1",
+            "hospital":"hospital1",
+            "partment":"partment1",
+            "space":"space1",
+            "id":"id1"
+        },
+        {
+            "name":"用户名1",
+            "account":"account1",
+            "hospital":"hospital1",
+            "partment":"partment1",
+            "space":"space1",
+            "id":"id1"
+        },
+        {
+            "name":"用户名1",
+            "account":"account1",
+            "hospital":"hospital1",
+            "partment":"partment1",
+            "space":"space1",
+            "id":"id1"
+        }
+    ],
+    "infopage":{
+      "current":1,
+      "showItem":5,
+      "allpage":1
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "editinfostatus":"true",
+    "editinfobody": 
+    { 
+          "name":"编辑名称", 
+          "description":"编辑描述",
+          "abbr":"编辑缩写",
+          "contactName":"编辑联系人",
+          "contactAddress":"编辑联系地址",
+          "contactMethod1":"编辑联系方式1",
+          "contactMethod2":"编辑联系方式2",
+          "contactMethod3":"编辑联系方式3",
+          "contactMethod4":"编辑联系方式4",
+          "hostipalId":"hostipalone" 
+    }     
+}
+

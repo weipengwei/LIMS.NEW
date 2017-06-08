@@ -1,0 +1,4 @@
+C:\Users\su_gjian\Desktop\TEST\LIMS.NEW\LIMS.NEW\bin\Debug\LIMS.NEW.dll
+C:\Users\su_gjian\Desktop\TEST\LIMS.NEW\LIMS.NEW\bin\Debug\LIMS.NEW.pdb
+C:\Users\su_gjian\Desktop\TEST\LIMS.NEW\LIMS.NEW\obj\Debug\LIMS.NEW.dll
+C:\Users\su_gjian\Desktop\TEST\LIMS.NEW\LIMS.NEW\obj\Debug\LIMS.NEW.pdb

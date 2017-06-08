@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{24930EB2-DCEE-4D97-B797-A40B926C067B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LIMS.Repositories</RootNamespace>
+    <AssemblyName>LIMS.Repositories</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data.SqlCe, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Practices.EnterpriseLibrary.Data.SqlCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplyFormRepository.cs" />
+    <Compile Include="AuditingProductRepository.cs" />
+    <Compile Include="CheckFormRepository.cs" />
+    <Compile Include="DispatchFormRepository.cs" />
+    <Compile Include="FormApproveListRepository.cs" />
+    <Compile Include="GoodsCheckDataRepository.cs" />
+    <Compile Include="GoodsCheckRepository.cs" />
+    <Compile Include="GoodsExtraRepsitory.cs" />
+    <Compile Include="GoodsInventoryRepository.cs" />
+    <Compile Include="GoodsRepsitory.cs" />
+    <Compile Include="GoodsSerialFormRepository.cs" />
+    <Compile Include="GoodsSerialRepository.cs" />
+    <Compile Include="GoodsStateRepository.cs" />
+    <Compile Include="HospitalProductDonationRepository.cs" />
+    <Compile Include="HospitalProductRepository.cs" />
+    <Compile Include="IdentityCreatorRepository.cs" />
+    <Compile Include="IncomingFormRepository.cs" />
+    <Compile Include="InspectionFormRepository.cs" />
+    <Compile Include="FormApproversRepository.cs" />
+    <Compile Include="MoveFormRepository.cs" />
+    <Compile Include="MoveinFormRepository.cs" />
+    <Compile Include="MoveoutFormRepository.cs" />
+    <Compile Include="DonateProductRepository.cs" />
+    <Compile Include="OrderFormRepository.cs" />
+    <Compile Include="ProductRepository.cs" />
+    <Compile Include="ReceiptInfoRepository.cs" />
+    <Compile Include="ReceiveFormRepository.cs" />
+    <Compile Include="RepositoryBase.cs" />
+    <Compile Include="ReturnFormRepository.cs" />
+    <Compile Include="SystemFunctionRepository.cs" />
+    <Compile Include="SystemPrivilegeRepository.cs" />
+    <Compile Include="TransHelper.cs" />
+    <Compile Include="UnitRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserPrivilegeRepository.cs" />
+    <Compile Include="UserRepository.cs" />
+    <Compile Include="VendorHospitalsRepository.cs" />
+    <Compile Include="VendorProductRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LIMS.Entities\LIMS.Entities.csproj">
+      <Project>{bf83777b-b4d9-4ee4-ba6b-bb1ee627ccca}</Project>
+      <Name>LIMS.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LIMS.Models\LIMS.Models.csproj">
+      <Project>{c28b5070-b092-4230-a55a-b4d63a1482d9}</Project>
+      <Name>LIMS.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LIMS.Util\LIMS.Util.csproj">
+      <Project>{e6379611-2113-4c47-b19d-a56450cbf29d}</Project>
+      <Name>LIMS.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ContactInfoRepository.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

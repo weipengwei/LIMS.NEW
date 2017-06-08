@@ -1,0 +1,25 @@
+{
+    "status":true,
+    "editUserInfo":{
+        "unit":"value",
+        "name":"编辑信息",
+        "account":"编辑信息",
+        "password":"编辑信息",
+        "repeatPassword":"编辑信息",
+        "place":"编辑信息"
+    },
+    "unit":[
+        {
+            "name":"单位1",
+            "value":"value1"
+        },
+        {
+            "name":"单位1",
+            "value":"value1"
+        },
+        {
+            "name":"单位1",
+            "value":"value1"
+        }
+    ]
+}

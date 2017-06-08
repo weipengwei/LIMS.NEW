@@ -1,0 +1,55 @@
+{
+     "infostatus":"true",
+    "infobody": [  
+    { 
+          "name":"上海医院", 
+          "description":"上海医院","abbr":"rjyy",
+          "contactName":"联系人",
+          "contactAddress":"联系地址",
+          "contactMethod1":"联系方式1",
+          "contactMethod2":"联系方式2",
+          "contactMethod3":"联系方式3",
+          "contactMethod4":"联系方式4",
+          "hostipalId":"hostipalone" 
+    },
+    { 
+          "name":"上海医院", 
+          "description":"上海医院","abbr":"rjyy",
+          "contactName":"联系人",
+          "contactAddress":"联系地址",
+          "contactMethod1":"联系方式1",
+          "contactMethod2":"联系方式2",
+          "contactMethod3":"联系方式3",
+          "contactMethod4":"联系方式4",
+          "hostipalId":"hostipalone" 
+    },
+    { 
+          "name":"上海医院", 
+          "description":"上海医院","abbr":"rjyy",
+          "contactName":"联系人",
+          "contactAddress":"联系地址",
+          "contactMethod1":"联系方式1",
+          "contactMethod2":"联系方式2",
+          "contactMethod3":"联系方式3",
+          "contactMethod4":"联系方式4",
+          "hostipalId":"hostipalone" 
+    },
+    { 
+          "name":"上海医院", 
+          "description":"上海医院","abbr":"rjyy",
+          "contactName":"联系人",
+          "contactAddress":"联系地址",
+          "contactMethod1":"联系方式1",
+          "contactMethod2":"联系方式2",
+          "contactMethod3":"联系方式3",
+          "contactMethod4":"联系方式4",
+          "hostipalId":"hostipalone" 
+    }     
+],
+    "infopage":{
+      "current":1,
+      "showItem":5,
+      "allpage":1
+    }
+}
+

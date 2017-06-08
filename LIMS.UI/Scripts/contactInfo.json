@@ -1,0 +1,12 @@
+{
+    "infostatus":true,
+
+    "infobody":{
+    "name":"联系人",
+    "address":"联系地址",
+    "type1":"1234123",
+    "type2":"1234123",
+    "type3":"1234123",
+    "type4":"1234123"
+    }
+}

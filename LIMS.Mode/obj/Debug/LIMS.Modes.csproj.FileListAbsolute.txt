@@ -1,0 +1,7 @@
+E:\Customer\YangCheng\试剂管理\Source\LIMS.Mode\bin\Debug\LIMS.Modes.dll
+E:\Customer\YangCheng\试剂管理\Source\LIMS.Mode\bin\Debug\LIMS.Modes.pdb
+E:\Customer\YangCheng\试剂管理\Source\LIMS.Mode\bin\Debug\LIMS.Util.dll
+E:\Customer\YangCheng\试剂管理\Source\LIMS.Mode\bin\Debug\LIMS.Util.pdb
+E:\Customer\YangCheng\试剂管理\Source\LIMS.Mode\obj\Debug\LIMS.Modes.csprojResolveAssemblyReference.cache
+E:\Customer\YangCheng\试剂管理\Source\LIMS.Mode\obj\Debug\LIMS.Modes.dll
+E:\Customer\YangCheng\试剂管理\Source\LIMS.Mode\obj\Debug\LIMS.Modes.pdb

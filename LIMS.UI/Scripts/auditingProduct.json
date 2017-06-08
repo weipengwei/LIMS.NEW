@@ -1,0 +1,43 @@
+{
+        "auditingStasus":true,
+        "auditingHostipals":[
+          {
+            "hostipalName":"福建新大陆",
+            "hostipalValue":"123-11ce-4bf1-9737-fa503c1e9d2a"
+          },
+          {
+            "hostipalName":"北京北方所",
+            "hostipalValue":"234-11ce-4bf1-9737-fa503c1e9d2a"
+          },
+          {
+            "hostipalName":"苏州科晴生物",
+            "hostipalValue":"345-11ce-4bf1-9737-fa503c1e9d2a"
+          },{
+            "hostipalName":"上海誉莱医疗",
+            "hostipalValue":"456-11ce-4bf1-9737-fa503c1e9d2a"
+          },
+          {
+            "hostipalName":"苏州明德生物科技有限公司",
+            "hostipalValue":"3524-11ce-4bf1-9737-fa503c1e9d2a"
+          }
+        ],
+        "auditingProducts":[
+          {
+            "productValue":"1E34625C-1EF9-4122-98EE-87B12F4DE6A1",
+            "productName":"e601系统清洗液"          
+          },
+          {
+            "productValue":"1E34625C-1EF9-4122-98EE-87B12F4DE6A1",
+            "productName":"二次分杯管"          
+          },
+          {
+            "productValue":"1E34625C-1EF9-4122-98EE-87B12F4DE6A1",
+            "productName":"PCT（罗氏）"          
+          },
+          {
+            "productValue":"1E34625C-1EF9-4122-98EE-87B12F4DE6A1",
+            "productName":"PINP"          
+          }
+        ]
+}
+    

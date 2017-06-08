@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3324D39E-D951-497B-9B19-A9754EE59C17}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LIMS.Web</RootNamespace>
+    <AssemblyName>LIMS.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data.SqlCe, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Practices.EnterpriseLibrary.Data.SqlCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\ErrorController.cs" />
+    <Compile Include="Controllers\GoodsSerialController.cs" />
+    <Compile Include="Controllers\MainController.cs" />
+    <Compile Include="Controllers\Main\HelperController.cs" />
+    <Compile Include="Controllers\Main\FormsController.cs" />
+    <Compile Include="Controllers\Main\HospitalStoreroomController.cs" />
+    <Compile Include="Controllers\Profile\UserInfoController.cs" />
+    <Compile Include="Controllers\Setting\UnitController.cs" />
+    <Compile Include="Controllers\Setting\UserController.cs" />
+    <Compile Include="Controllers\Setting\ProductController.cs" />
+    <Compile Include="Controllers\Setting\VendorSettingController.cs" />
+    <Compile Include="Controllers\Setting\HospitalSettingController.cs" />
+    <Compile Include="Controllers\Setting\SystemFunctionController.cs" />
+    <Compile Include="Controllers\Main\VendorController.cs" />
+    <Compile Include="Controllers\LogonController.cs" />
+    <Compile Include="Controllers\Main\HospitalController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\LIMS.Entities\LIMS.Entities.csproj">
+      <Project>{bf83777b-b4d9-4ee4-ba6b-bb1ee627ccca}</Project>
+      <Name>LIMS.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LIMS.Models\LIMS.Models.csproj">
+      <Project>{c28b5070-b092-4230-a55a-b4d63a1482d9}</Project>
+      <Name>LIMS.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LIMS.MVCFoundation\LIMS.MVCFoundation.csproj">
+      <Project>{28dd8532-79f0-4cf0-9068-bdfcedb78a51}</Project>
+      <Name>LIMS.MVCFoundation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LIMS.Services\LIMS.Services.csproj">
+      <Project>{8387fa29-a287-48c3-b3de-e92209dc66d7}</Project>
+      <Name>LIMS.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LIMS.Util\LIMS.Util.csproj">
+      <Project>{e6379611-2113-4c47-b19d-a56450cbf29d}</Project>
+      <Name>LIMS.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
