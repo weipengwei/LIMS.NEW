@@ -123,20 +123,6 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
-    <Content Include="Scripts\css\app.df9cd82efc685d309c020376dfe1ae2e.css" />
-    <Content Include="Scripts\Forms\DispatchConfirm.js" />
-    <Content Include="Scripts\Forms\DispatchMain.js" />
-    <Content Include="Scripts\img\glyphicons-halflings-regular.8988968.svg" />
-    <Content Include="Scripts\js\app.3ea0277b1f4b210e5386.js" />
-    <Content Include="Scripts\js\manifest.0ebb6c165ff8d1d453fe.js" />
-    <Content Include="Scripts\js\vendor.33c5bc6a6f148327deca.js" />
-    <Content Include="Scripts\Vendor\AdjustPrice.js" />
-    <Content Include="Scripts\Vendor\DispatchConfirm.js" />
-    <Content Include="Scripts\Vendor\DispatchIndex.js" />
-    <Content Include="Scripts\Vendor\DispatchItemCreator.js" />
-    <Content Include="Scripts\Vendor\DispatchItemsView.js" />
-    <Content Include="Scripts\Vendor\OrderQueryDispatch.js" />
-    <Content Include="Scripts\Vendor\OrderQueryIndex.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -152,30 +138,6 @@
       <SubType>Designer</SubType>
     </Content>
     <None Include="Project_Readme.html" />
-    <Content Include="Scripts\addUser.json" />
-    <Content Include="Scripts\applyProduct.json" />
-    <Content Include="Scripts\applyProductInfo.json" />
-    <Content Include="Scripts\auditingProduct.json" />
-    <Content Include="Scripts\contactInfo.json" />
-    <Content Include="Scripts\editHospitalInfo.json" />
-    <Content Include="Scripts\editPartmentInfo.json" />
-    <Content Include="Scripts\editProductInfo.json" />
-    <Content Include="Scripts\editUser.json" />
-    <Content Include="Scripts\hospitalInfo.json" />
-    <Content Include="Scripts\partment.json" />
-    <Content Include="Scripts\partmentFunctionInfo.json" />
-    <Content Include="Scripts\productList.json" />
-    <Content Include="Scripts\roleAuthority.json" />
-    <Content Include="Scripts\user.json" />
-    <Content Include="Scripts\userInfo.json" />
-    <Content Include="Scripts\css\app.df9cd82efc685d309c020376dfe1ae2e.css.map" />
-    <Content Include="Scripts\fonts\glyphicons-halflings-regular.448c34a.woff2" />
-    <Content Include="Scripts\fonts\glyphicons-halflings-regular.e18bbf6.ttf" />
-    <Content Include="Scripts\fonts\glyphicons-halflings-regular.f4769f9.eot" />
-    <Content Include="Scripts\fonts\glyphicons-halflings-regular.fa27723.woff" />
-    <Content Include="Scripts\js\app.3ea0277b1f4b210e5386.js.map" />
-    <Content Include="Scripts\js\manifest.0ebb6c165ff8d1d453fe.js.map" />
-    <Content Include="Scripts\js\vendor.33c5bc6a6f148327deca.js.map" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LIMS.Entities\LIMS.Entities.csproj">
@@ -203,7 +165,9 @@
       <Name>LIMS.Web</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="static\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

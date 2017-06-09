@@ -17,7 +17,7 @@ namespace LIMS.Repositories
         private static string COLUMN_SQL = @"id, name, full_name, description, brand, short_code, 
 mini_package_unit, mini_package_spec, mini_package_count, package_unit, 
 category, barcode, barcode_url, is_local,
-created_id, created_time, updated_id, updated_time,barcode_url,register_number,ValidDate";
+created_id, created_time, updated_id, updated_time,register_number,ValidDate";
 
         public static void Add(ProductEntity product)
         {
@@ -47,8 +47,7 @@ VALUES(@p_id, @p_name, @p_full_name, @p_description, @p_brand, @p_short_code,
             db.AddInParameter(dc, "p_created_time", DbType.DateTime, product.CreatedTime);
             db.AddInParameter(dc, "p_updated_id", DbType.String, product.UpdatedId);
             db.AddInParameter(dc, "p_updated_time", DbType.DateTime, product.UpdatedTime);
-            db.AddInParameter(dc, "p_updated_time", DbType.DateTime, product.UpdatedTime);
-            db.AddInParameter(dc, "p_barcode_url", DbType.String, product.BarcodeUrl);
+            db.AddInParameter(dc, "p_updated_time", DbType.DateTime, product.UpdatedTime);           
             db.AddInParameter(dc, "p_register_number", DbType.String, product.RegisterNumber);
             db.AddInParameter(dc, "p_ValidDate", DbType.DateTime, product.ValidDate);
             db.ExecuteNonQuery(dc);

@@ -40,3 +40,14 @@ C:\Users\su_gjian\Desktop\TEST\LIMS.NEW\LIMS.Util\bin\Debug\zxing.presentation.x
 C:\Users\su_gjian\Desktop\TEST\LIMS.NEW\LIMS.Util\obj\Debug\LIMS.Util.dll
 C:\Users\su_gjian\Desktop\TEST\LIMS.NEW\LIMS.Util\obj\Debug\LIMS.Util.pdb
 C:\Users\su_gjian\Desktop\TEST\LIMS.NEW\LIMS.Util\obj\Debug\LIMS.Util.csprojResolveAssemblyReference.cache
+D:\logic\github\LIMS.NEW\LIMS.Util\bin\Debug\LIMS.Util.dll
+D:\logic\github\LIMS.NEW\LIMS.Util\bin\Debug\LIMS.Util.pdb
+D:\logic\github\LIMS.NEW\LIMS.Util\bin\Debug\zxing.dll
+D:\logic\github\LIMS.NEW\LIMS.Util\bin\Debug\zxing.presentation.dll
+D:\logic\github\LIMS.NEW\LIMS.Util\bin\Debug\zxing.pdb
+D:\logic\github\LIMS.NEW\LIMS.Util\bin\Debug\zxing.xml
+D:\logic\github\LIMS.NEW\LIMS.Util\bin\Debug\zxing.presentation.pdb
+D:\logic\github\LIMS.NEW\LIMS.Util\bin\Debug\zxing.presentation.xml
+D:\logic\github\LIMS.NEW\LIMS.Util\obj\Debug\LIMS.Util.csprojResolveAssemblyReference.cache
+D:\logic\github\LIMS.NEW\LIMS.Util\obj\Debug\LIMS.Util.dll
+D:\logic\github\LIMS.NEW\LIMS.Util\obj\Debug\LIMS.Util.pdb

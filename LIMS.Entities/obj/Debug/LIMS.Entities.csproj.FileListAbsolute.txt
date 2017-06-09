@@ -38,3 +38,13 @@ C:\Users\su_gjian\Desktop\TEST\LIMS.NEW\LIMS.Entities\bin\Debug\zxing.xml
 C:\Users\su_gjian\Desktop\TEST\LIMS.NEW\LIMS.Entities\obj\Debug\LIMS.Entities.csprojResolveAssemblyReference.cache
 C:\Users\su_gjian\Desktop\TEST\LIMS.NEW\LIMS.Entities\obj\Debug\LIMS.Entities.dll
 C:\Users\su_gjian\Desktop\TEST\LIMS.NEW\LIMS.Entities\obj\Debug\LIMS.Entities.pdb
+D:\logic\github\LIMS.NEW\LIMS.Entities\bin\Debug\LIMS.Entities.dll
+D:\logic\github\LIMS.NEW\LIMS.Entities\bin\Debug\LIMS.Entities.pdb
+D:\logic\github\LIMS.NEW\LIMS.Entities\bin\Debug\LIMS.Util.dll
+D:\logic\github\LIMS.NEW\LIMS.Entities\bin\Debug\zxing.dll
+D:\logic\github\LIMS.NEW\LIMS.Entities\bin\Debug\LIMS.Util.pdb
+D:\logic\github\LIMS.NEW\LIMS.Entities\bin\Debug\zxing.pdb
+D:\logic\github\LIMS.NEW\LIMS.Entities\bin\Debug\zxing.xml
+D:\logic\github\LIMS.NEW\LIMS.Entities\obj\Debug\LIMS.Entities.csprojResolveAssemblyReference.cache
+D:\logic\github\LIMS.NEW\LIMS.Entities\obj\Debug\LIMS.Entities.dll
+D:\logic\github\LIMS.NEW\LIMS.Entities\obj\Debug\LIMS.Entities.pdb

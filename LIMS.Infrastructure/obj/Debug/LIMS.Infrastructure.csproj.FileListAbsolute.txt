@@ -3,3 +3,8 @@ C:\Users\su_gjian\Desktop\TEST\LIMS.NEW\LIMS.Infrastructure\bin\Debug\LIMS.Infra
 C:\Users\su_gjian\Desktop\TEST\LIMS.NEW\LIMS.Infrastructure\obj\Debug\LIMS.Infrastructure.dll
 C:\Users\su_gjian\Desktop\TEST\LIMS.NEW\LIMS.Infrastructure\obj\Debug\LIMS.Infrastructure.pdb
 C:\Users\su_gjian\Desktop\TEST\LIMS.NEW\LIMS.Infrastructure\obj\Debug\LIMS.Infrastructure.csprojResolveAssemblyReference.cache
+D:\logic\github\LIMS.NEW\LIMS.Infrastructure\bin\Debug\LIMS.Infrastructure.dll
+D:\logic\github\LIMS.NEW\LIMS.Infrastructure\bin\Debug\LIMS.Infrastructure.pdb
+D:\logic\github\LIMS.NEW\LIMS.Infrastructure\obj\Debug\LIMS.Infrastructure.csprojResolveAssemblyReference.cache
+D:\logic\github\LIMS.NEW\LIMS.Infrastructure\obj\Debug\LIMS.Infrastructure.dll
+D:\logic\github\LIMS.NEW\LIMS.Infrastructure\obj\Debug\LIMS.Infrastructure.pdb
