@@ -87,7 +87,7 @@ namespace LIMS.Entities
         public DateTime ValidDate
         {
             get; set;
-        }
+        }=new DateTime(1900,1,1);
 
         public override void Init(IDataReader reader)
         {
