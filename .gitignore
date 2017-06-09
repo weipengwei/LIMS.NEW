@@ -44,6 +44,7 @@ $RECYCLE.BIN/
 .AppleDesktop
 Network Trash Folder
 Temporary Items
+.DS_Store
 .apdisk
 *.dll
 *.pdb

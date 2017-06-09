@@ -61,3 +61,4 @@ C:\Users\su_gjian\Desktop\6-07-01\LIMS.NEW\LIMS.Util\bin\Debug\zxing.presentatio
 C:\Users\su_gjian\Desktop\6-07-01\LIMS.NEW\LIMS.Util\bin\Debug\zxing.presentation.xml
 C:\Users\su_gjian\Desktop\6-07-01\LIMS.NEW\LIMS.Util\obj\Debug\LIMS.Util.dll
 C:\Users\su_gjian\Desktop\6-07-01\LIMS.NEW\LIMS.Util\obj\Debug\LIMS.Util.pdb
+C:\Users\su_gjian\Desktop\6-07-01\LIMS.NEW\LIMS.Util\obj\Debug\LIMS.Util.csprojResolveAssemblyReference.cache
