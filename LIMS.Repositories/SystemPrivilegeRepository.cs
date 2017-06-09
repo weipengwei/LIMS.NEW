@@ -14,14 +14,27 @@ namespace LIMS.Repositories
     {
         private const string COLUMN_SQL = @"id, object_id, object_type, fun_key, query, operate, created_id, created_time, updated_id, updated_time";
 
-        public static IList<SystemPrivilegeEntity> GetByObjectId(string objectId)
+        /// <summary>
+        /// 根据objectId和objectType获取SystemPrivilege
+        /// </summary>
+        /// <param name="objectId"></param>
+        /// <param name="objectType"></param>
+        /// <returns></returns>
+        public static IList<SystemPrivilegeEntity> GetByObjectId(string objectId, int objectType = -1)
         {
             var sql = string.Format(@"SELECT {0} FROM system_privilege WHERE object_id = @p_object_id", COLUMN_SQL);
 
             var db = DatabaseFactory.CreateDatabase();
+            if (objectType != -1)
+            {
+                sql += " AND ObjectType=@ObjectType  ";
+            }
             var dc = db.GetSqlStringCommand(sql);
             db.AddInParameter(dc, "p_object_id", DbType.String, objectId);
-
+            if (objectType != -1)
+            {
+                db.AddInParameter(dc, "ObjectType", DbType.Int32, objectType);
+            }
             var list = new List<SystemPrivilegeEntity>();
             using (var reader = db.ExecuteReader(dc))
             {

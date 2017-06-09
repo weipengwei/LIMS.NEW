@@ -14,44 +14,48 @@ using LIMS.MVCFoundation.Attributes;
 
 namespace LIMS.Web.Controllers.Setting
 {
-    [RequiredLogon]
-    [BaseEntityValue]
+    // [RequiredLogon]
+    //[BaseEntityValue]
     public class ProductController : BaseController
     {
-        public ActionResult Index()
-        {
-            return View();
-        }
-
+        /// <summary>
+        /// 产品分页查询
+        /// </summary>
+        /// <param name="condition">产品名称</param>
+        /// <param name="pager">分页信息</param>
+        /// <returns></returns>
+        [HttpPost]
         public JsonNetResult Query(string condition, PagerInfo pager)
         {
             var list = new ProductService().Query(condition, pager);
             return JsonNet(new ResponseResult(true, list, pager));
         }
 
-        public ActionResult Edit(string id)
+        /// <summary>
+        /// 主键ID查询产品
+        /// </summary>
+        /// <param name="id">主键ID</param>
+        /// <returns></returns>
+        [HttpPost]
+        public JsonNetResult Edit(string id)
         {
-            if (string.IsNullOrEmpty(id))
-            {
-                return View();
-            }
-            else
-            {
-                var mode = new ProductService().Get(id);
-
-                return View(mode);
-            }
+            var mode = new ProductService().Get(id);
+            return JsonNet(new ResponseResult(true, mode));
         }
 
+        /// <summary>
+        /// 新增或修改产品（ID>0修改 ID=0新增）
+        /// </summary>
+        /// <param name="product"></param>
+        /// <returns></returns>
+        [HttpPost]
         public JsonNetResult Save(ProductEntity product)
         {
             if (!this.Validate(product))
             {
                 return JsonNet(new ResponseResult(false, "The required attributes of product are not filled.", ErrorCodes.RequireField));
             }
-
             new ProductService().Save(product);
-
             return JsonNet(new ResponseResult());
         }
 

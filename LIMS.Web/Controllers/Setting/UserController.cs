@@ -19,6 +19,10 @@ namespace LIMS.Web.Controllers.Setting
     [BaseEntityValue]
     public class UserController : BaseController
     {
+        private  readonly UserService _userService = new UserService();
+        private readonly SystemPrivilegeService _systemPrivilegeService = new SystemPrivilegeService();
+        private readonly UnitService _unitService = new UnitService();
+
         public ActionResult Index()
         {
             ViewBag.Roots = GetRoots();
@@ -51,6 +55,11 @@ namespace LIMS.Web.Controllers.Setting
             }
         }
 
+        /// <summary>
+        /// 修改用户信息
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
         public JsonNetResult Save(UserModel user)
         {
             if (!this.Validate(user))
@@ -79,6 +88,8 @@ namespace LIMS.Web.Controllers.Setting
             return JsonNet(new ResponseResult());
         }
 
+        #region 私有方法
+
         private bool Validate(UserModel user)
         {
             if (string.IsNullOrEmpty(user.Name))
@@ -95,8 +106,8 @@ namespace LIMS.Web.Controllers.Setting
             {
                 return false;
             }
-            
-            if(!string.IsNullOrEmpty(user.Password) && string.IsNullOrEmpty(user.ValidPassword))
+
+            if (!string.IsNullOrEmpty(user.Password) && string.IsNullOrEmpty(user.ValidPassword))
             {
                 if (string.Compare(user.Password, user.ValidPassword) != 0)
                 {
@@ -111,23 +122,56 @@ namespace LIMS.Web.Controllers.Setting
         {
             var roots = new UnitService().GetByRootId(Constant.DEFAULT_UNIT_ROOT_ID);
             var hospitals = roots.Where(item => item.Type == UnitType.Hospital).Select(item =>
-              new
-              {
-                  Id = item.Id,
-                  Name = item.Name
-              }).ToList<object>();
+                new
+                {
+                    Id = item.Id,
+                    Name = item.Name
+                }).ToList<object>();
             var vendors = roots.Where(item => item.Type == UnitType.Vendor).Select(item =>
-              new
-              {
-                  Id = item.Id,
-                  Name = item.Name
-              }).ToList<object>();
+                new
+                {
+                    Id = item.Id,
+                    Name = item.Name
+                }).ToList<object>();
 
             var dic = new Dictionary<UnitType, List<object>>();
             dic[UnitType.Hospital] = hospitals;
             dic[UnitType.Vendor] = vendors;
 
             return dic;
+        }
+
+        #endregion
+
+
+
+        /// <summary>
+        /// 根据用户ID获取对应单位信息与权限
+        /// </summary>
+        /// <param name="account">用户ID</param>
+        /// <returns></returns>
+        [HttpPost]
+        public JsonNetResult GetUserRoot(string account)
+        {
+            UserEntity user = null;
+            UnitModel unit = null;
+            IList<SystemPrivilegeEntity> privilege = null;
+            if (UserService.TryGetUserByAccount(account, out user))
+            {
+                unit= _unitService.Get(user.UnitId);
+            }
+            if (unit != null)
+            {
+                privilege= _systemPrivilegeService.GetByObjectId(unit.Id,0);
+            }
+            return JsonNet(new ResponseResult(true,new
+            {
+                user_id= user==null?"": user.Id,
+                unit_id = unit == null ? "" : unit.Id,
+                unit_Type= unit?.Type.GetHashCode() ?? 0,
+                unit_ParentId = unit == null ? "" : unit.ParentId,
+                SystemPrivilege= privilege?.Select(m=> new {m.Id,m.FunKey})
+            }));
         }
     }
 }
